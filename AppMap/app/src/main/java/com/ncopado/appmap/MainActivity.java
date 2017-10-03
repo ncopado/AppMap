@@ -37,4 +37,12 @@ public class MainActivity extends AppCompatActivity {
 
         startActivity(intent);
     }
+
+    public  void goMapLocation4(View view){
+        Intent intent=new Intent(this,MapsActivity.class);
+        intent.putExtra("lat",19.1453473f);
+        intent.putExtra("lon",-96.100175f);
+
+        startActivity(intent);
+    }
 }
