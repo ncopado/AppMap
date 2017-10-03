@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent=new Intent(this,MapsActivity.class);
         intent.putExtra("lat",19.1400446f);
         intent.putExtra("lon",-96.1081946f);
+        intent.putExtra("name","Plaza Americas");
 
         startActivity(intent);
     }
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent=new Intent(this,MapsActivity.class);
         intent.putExtra("lat",19.138993f);
         intent.putExtra("lon",-96.1047671f);
+        intent.putExtra("name","Plaza Andamar");
 
         startActivity(intent);
     }
@@ -34,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent=new Intent(this,MapsActivity.class);
         intent.putExtra("lat",19.0955124f);
         intent.putExtra("lon",-96.1076843f);
-
+        intent.putExtra("name","Plaza de los valores");
         startActivity(intent);
     }
 
@@ -42,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent=new Intent(this,MapsActivity.class);
         intent.putExtra("lat",19.1453473f);
         intent.putExtra("lon",-96.100175f);
-
+        intent.putExtra("name","Plaza el dorado");
         startActivity(intent);
     }
 }

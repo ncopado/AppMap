@@ -14,6 +14,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private GoogleMap mMap;
     private LatLng postionMap;
+    String name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +28,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         float lat= bundle.getFloat("lat");
         float lon=bundle.getFloat("lon");
+        name=bundle.getString("name");
+
 
         postionMap = new LatLng( lat,lon);
 
@@ -49,7 +52,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         // Add a marker in Sydney and move the camera
         LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(postionMap).title("Plaza las americas"));
+        mMap.addMarker(new MarkerOptions().position(postionMap).title(name));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(postionMap));
     }
 }
